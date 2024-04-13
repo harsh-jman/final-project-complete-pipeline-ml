@@ -12,6 +12,9 @@ RUN git config --global user.email "$GIT_EMAIL" \
     && echo "https://$GIT_USERNAME:$GIT_TOKEN@github.com" > ~/.git-credentials \
     && git config --global credential.helper 'store --file ~/.git-credentials'
 
+#setting docs
+RUN git clone https://github.com/harsh-jman/harsh-jman.github.io dbt/target
+
 # Set the working directory in the container for dbt
 WORKDIR /root/.dbt
 
