@@ -1,0 +1,164 @@
+2024-04-12 10:51:51,358 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-12 10:51:51,358 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-12 10:51:51,360 - INFO -  * Restarting with stat
+2024-04-12 10:51:58,770 - WARNING -  * Debugger is active!
+2024-04-12 10:51:58,776 - INFO -  * Debugger PIN: 136-708-442
+2024-04-12 10:52:02,448 - INFO - 127.0.0.1 - - [12/Apr/2024 10:52:02] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:54:59,178 - INFO - 127.0.0.1 - - [12/Apr/2024 10:54:59] "OPTIONS /output HTTP/1.1" 200 -
+2024-04-12 10:54:59,572 - INFO - 127.0.0.1 - - [12/Apr/2024 10:54:59] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:55:04,322 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:04] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:55:08,918 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:08] "OPTIONS /output HTTP/1.1" 200 -
+2024-04-12 10:55:09,260 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:09] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:55:24,544 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:24] "OPTIONS /output HTTP/1.1" 200 -
+2024-04-12 10:55:24,833 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:24] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:55:27,896 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:27] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:55:30,180 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:30] "OPTIONS /output HTTP/1.1" 200 -
+2024-04-12 10:55:30,481 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:30] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:55:30,517 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:30] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:55:39,062 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:39] "OPTIONS /output HTTP/1.1" 200 -
+2024-04-12 10:55:39,409 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:39] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:55:40,726 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:40] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:55:43,066 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:43] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:55:47,831 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:47] "OPTIONS /output HTTP/1.1" 200 -
+2024-04-12 10:55:48,183 - INFO - 127.0.0.1 - - [12/Apr/2024 10:55:48] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:57:37,914 - INFO - 127.0.0.1 - - [12/Apr/2024 10:57:37] "OPTIONS /output HTTP/1.1" 200 -
+2024-04-12 10:57:38,205 - INFO - 127.0.0.1 - - [12/Apr/2024 10:57:38] "POST /output HTTP/1.1" 200 -
+2024-04-12 10:58:38,666 - INFO - 127.0.0.1 - - [12/Apr/2024 10:58:38] "OPTIONS /output HTTP/1.1" 200 -
+2024-04-12 10:58:38,951 - INFO - 127.0.0.1 - - [12/Apr/2024 10:58:38] "POST /output HTTP/1.1" 200 -
+2024-04-12 11:00:08,251 - INFO - 127.0.0.1 - - [12/Apr/2024 11:00:08] "[35m[1mGET /getEDA HTTP/1.1[0m" 500 -
+2024-04-12 11:00:08,321 - INFO - 127.0.0.1 - - [12/Apr/2024 11:00:08] "GET /getEDA?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-12 11:00:08,420 - INFO - 127.0.0.1 - - [12/Apr/2024 11:00:08] "GET /getEDA?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-04-12 11:00:08,828 - INFO - 127.0.0.1 - - [12/Apr/2024 11:00:08] "GET /getEDA?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-12 11:00:09,056 - INFO - 127.0.0.1 - - [12/Apr/2024 11:00:09] "[36mGET /getEDA?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-12 11:03:14,626 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-12 11:03:14,626 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-12 11:03:14,628 - INFO -  * Restarting with stat
+2024-04-12 11:03:20,646 - WARNING -  * Debugger is active!
+2024-04-12 11:03:20,652 - INFO -  * Debugger PIN: 136-708-442
+2024-04-12 11:03:45,823 - INFO - 127.0.0.1 - - [12/Apr/2024 11:03:45] "GET /getEDA HTTP/1.1" 200 -
+2024-04-12 11:04:13,163 - INFO - 127.0.0.1 - - [12/Apr/2024 11:04:13] "GET /getEDA HTTP/1.1" 200 -
+2024-04-12 12:12:41,691 - INFO - 127.0.0.1 - - [12/Apr/2024 12:12:41] "OPTIONS /train HTTP/1.1" 200 -
+2024-04-12 12:13:01,565 - INFO - 127.0.0.1 - - [12/Apr/2024 12:13:01] "GET /train HTTP/1.1" 200 -
+2024-04-12 12:38:56,523 - INFO - 127.0.0.1 - - [12/Apr/2024 12:38:56] "OPTIONS /train HTTP/1.1" 200 -
+2024-04-12 12:39:14,467 - INFO - 127.0.0.1 - - [12/Apr/2024 12:39:14] "GET /train HTTP/1.1" 200 -
+2024-04-12 16:16:15,315 - INFO - 127.0.0.1 - - [12/Apr/2024 16:16:15] "OPTIONS /train HTTP/1.1" 200 -
+2024-04-12 16:16:33,234 - INFO - 127.0.0.1 - - [12/Apr/2024 16:16:33] "GET /train HTTP/1.1" 200 -
+2024-04-12 16:24:39,151 - INFO - 127.0.0.1 - - [12/Apr/2024 16:24:39] "OPTIONS /train HTTP/1.1" 200 -
+2024-04-12 16:24:56,406 - INFO - 127.0.0.1 - - [12/Apr/2024 16:24:56] "GET /train HTTP/1.1" 200 -
+2024-04-12 16:25:53,270 - INFO - 127.0.0.1 - - [12/Apr/2024 16:25:53] "GET /train HTTP/1.1" 200 -
+2024-04-12 16:43:26,521 - INFO - 127.0.0.1 - - [12/Apr/2024 16:43:26] "OPTIONS /getEDA HTTP/1.1" 200 -
+2024-04-12 16:43:48,142 - INFO - 127.0.0.1 - - [12/Apr/2024 16:43:48] "GET /getEDA HTTP/1.1" 200 -
+2024-04-12 17:05:58,956 - INFO - 127.0.0.1 - - [12/Apr/2024 17:05:58] "OPTIONS /output HTTP/1.1" 200 -
+2024-04-12 17:05:59,625 - INFO - 127.0.0.1 - - [12/Apr/2024 17:05:59] "POST /output HTTP/1.1" 200 -
+2024-04-12 17:07:40,001 - INFO - 127.0.0.1 - - [12/Apr/2024 17:07:40] "GET /getEDA HTTP/1.1" 200 -
+2024-04-12 17:38:40,204 - INFO -  * Detected change in 'D:\\final Project\\DSP\\Model\\utils\\app.py', reloading
+2024-04-12 17:38:41,255 - INFO -  * Restarting with stat
+2024-04-12 17:38:56,273 - WARNING -  * Debugger is active!
+2024-04-12 17:38:56,279 - INFO -  * Debugger PIN: 136-708-442
+2024-04-12 17:39:05,093 - INFO -  * Detected change in 'D:\\final Project\\DSP\\Model\\utils\\dbt_triggers.py', reloading
+2024-04-12 17:39:05,524 - INFO -  * Restarting with stat
+2024-04-12 17:39:11,231 - WARNING -  * Debugger is active!
+2024-04-12 17:39:11,237 - INFO -  * Debugger PIN: 136-708-442
+2024-04-12 17:39:16,533 - INFO -  * Detected change in 'D:\\final Project\\DSP\\Model\\utils\\dbt_triggers.py', reloading
+2024-04-12 17:39:16,969 - INFO -  * Restarting with stat
+2024-04-12 17:39:22,707 - WARNING -  * Debugger is active!
+2024-04-12 17:39:22,713 - INFO -  * Debugger PIN: 136-708-442
+2024-04-12 17:39:34,110 - INFO -  * Detected change in 'D:\\final Project\\DSP\\Model\\server.py', reloading
+2024-04-12 17:39:34,553 - INFO -  * Restarting with stat
+2024-04-12 17:39:40,454 - WARNING -  * Debugger is active!
+2024-04-12 17:39:40,460 - INFO -  * Debugger PIN: 136-708-442
+2024-04-12 17:39:45,721 - INFO -  * Detected change in 'D:\\final Project\\DSP\\Model\\server.py', reloading
+2024-04-12 17:39:46,141 - INFO -  * Restarting with stat
+2024-04-12 19:53:57,001 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-12 19:53:57,002 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-12 19:53:57,004 - INFO -  * Restarting with stat
+2024-04-12 19:54:03,257 - WARNING -  * Debugger is active!
+2024-04-12 19:54:03,257 - INFO -  * Debugger PIN: 276-441-308
+2024-04-12 20:07:08,665 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 20:08:01,398 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 20:10:10,567 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 20:12:00,500 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 20:15:30,804 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 20:19:07,923 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 20:20:30,729 - ERROR - Error occurred during dbt documentation generation: [WinError 3] The system cannot find the path specified: 'resources/index.html'
+2024-04-12 20:23:50,763 - ERROR - Error occurred during dbt documentation generation: [WinError 3] The system cannot find the path specified: 'resources/index.html'
+2024-04-12 20:59:50,937 - ERROR - Error occurred during dbt documentation generation: [WinError 3] The system cannot find the path specified: 'resources\\index.html'
+2024-04-12 21:00:46,408 - ERROR - Error occurred during dbt documentation generation: [WinError 3] The system cannot find the path specified: 'resources/index.html'
+2024-04-12 21:03:15,360 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 21:06:15,413 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT\\target/index.html'
+2024-04-12 21:06:56,657 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT]target/index.html'
+2024-04-12 21:07:36,959 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 21:10:24,532 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT\\target\\index.html'
+2024-04-12 21:11:30,262 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 21:18:28,538 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 21:18:49,210 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 21:18:53,629 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 21:19:30,881 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 21:20:45,979 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 21:22:27,305 - ERROR - Error occurred during dbt documentation generation: [Errno 2] No such file or directory: 'DBT/target/index.html'
+2024-04-12 22:02:19,810 - INFO - Establishing connections...
+2024-04-12 22:02:19,819 - ERROR - Error occurred: 'MONGO_USERNAME'
+2024-04-12 22:08:25,656 - INFO - Establishing connections...
+2024-04-12 22:08:25,664 - ERROR - Error occurred: 'MONGO_USERNAME'
+2024-04-12 22:08:40,513 - INFO - Establishing connections...
+2024-04-12 22:08:40,514 - ERROR - Error occurred: 'MONGO_USERNAME'
+2024-04-12 22:10:00,302 - INFO - Establishing connections...
+2024-04-12 22:10:01,574 - INFO - Ingesting data into MongoDB...
+2024-04-12 22:10:02,514 - INFO - Ingesting data into Snowflake...
+2024-04-12 22:10:12,745 - INFO - Data ingestion successful
+2024-04-12 23:05:53,166 - INFO - Establishing connections...
+2024-04-12 23:05:54,134 - INFO - Ingesting data into MongoDB...
+2024-04-12 23:05:55,223 - INFO - Ingesting data into Snowflake...
+2024-04-12 23:06:05,715 - INFO - Data ingestion successful
+2024-04-12 23:08:00,738 - INFO - Establishing connections...
+2024-04-12 23:08:01,485 - INFO - Ingesting data into MongoDB...
+2024-04-12 23:08:02,449 - INFO - Ingesting data into Snowflake...
+2024-04-12 23:08:10,191 - INFO - Data ingestion successful
+2024-04-12 23:43:47,700 - INFO - Establishing connections...
+2024-04-12 23:43:48,461 - INFO - Ingesting data into MongoDB...
+2024-04-12 23:43:49,707 - INFO - Ingesting data into Snowflake...
+2024-04-12 23:43:57,642 - INFO - Data ingestion successful
+2024-04-12 23:45:00,239 - INFO - Establishing connections...
+2024-04-12 23:45:02,442 - INFO - Ingesting data into MongoDB...
+2024-04-12 23:45:04,037 - INFO - Ingesting data into Snowflake...
+2024-04-12 23:45:14,062 - INFO - Data ingestion successful
+2024-04-12 23:50:07,298 - INFO - Establishing connections...
+2024-04-12 23:50:08,025 - INFO - Ingesting data into MongoDB...
+2024-04-12 23:50:09,004 - INFO - Ingesting data into Snowflake...
+2024-04-12 23:50:17,433 - INFO - Data ingestion successful
+2024-04-12 23:51:41,670 - INFO - Establishing connections...
+2024-04-12 23:51:43,039 - INFO - Ingesting data into MongoDB...
+2024-04-12 23:51:44,182 - INFO - Ingesting data into Snowflake...
+2024-04-12 23:51:53,133 - INFO - Data ingestion successful
+2024-04-12 23:52:14,731 - INFO - Establishing connections...
+2024-04-12 23:52:16,151 - INFO - Ingesting data into MongoDB...
+2024-04-12 23:52:17,256 - INFO - Ingesting data into Snowflake...
+2024-04-12 23:52:30,766 - INFO - Data ingestion successful
+2024-04-12 23:53:53,102 - INFO - Establishing connections...
+2024-04-12 23:53:54,651 - INFO - Ingesting data into MongoDB...
+2024-04-12 23:53:55,820 - INFO - Ingesting data into Snowflake...
+2024-04-12 23:54:04,767 - INFO - Data ingestion successful
+2024-04-12 23:56:32,416 - INFO - Establishing connections...
+2024-04-12 23:56:33,181 - INFO - Ingesting data into MongoDB...
+2024-04-12 23:56:34,169 - INFO - Ingesting data into Snowflake...
+2024-04-12 23:56:43,537 - INFO - Data ingestion successful
+2024-04-13 07:49:31,037 - INFO - Establishing connections...
+2024-04-13 07:49:32,089 - INFO - Ingesting data into MongoDB...
+2024-04-13 07:49:33,656 - INFO - Ingesting data into Snowflake...
+2024-04-13 07:49:46,356 - INFO - Data ingestion successful
+2024-04-13 20:55:52,684 - INFO - Data ingestion successful. Time taken: 15.13 seconds
+2024-04-13 22:36:30,699 - WARNING - Error lines received while fetching: error: failed to push some refs to 'https://github.com/harsh-jman/harsh-jman.github.io'
+2024-04-13 22:36:30,700 - INFO - DBT docs generated successfully. Time taken: 20.72 seconds
+2024-04-13 22:37:49,036 - WARNING - Error lines received while fetching: error: failed to push some refs to 'https://github.com/harsh-jman/harsh-jman.github.io'
+2024-04-13 22:37:49,037 - INFO - DBT docs generated successfully. Time taken: 18.04 seconds
+2024-04-13 22:38:53,677 - WARNING - Error lines received while fetching: error: failed to push some refs to 'https://github.com/harsh-jman/harsh-jman.github.io'
+2024-04-13 22:38:53,678 - INFO - DBT docs generated successfully. Time taken: 15.87 seconds
+2024-04-13 22:52:28,474 - INFO - DBT docs generated successfully. Time taken: 16.94 seconds
+2024-04-13 22:54:05,699 - INFO - DBT Run successful. Time taken: 20.34 seconds
+2024-04-13 22:54:20,596 - INFO - Data ingestion successful. Time taken: 9.32 seconds
+2024-04-13 22:55:22,353 - INFO - EDA report generated successfully. Time taken: 20.03 seconds
+2024-04-13 22:55:45,183 - ERROR - Error occurred while generating EDA report file: [WinError 2] The system cannot find the file specified: 'D:\\Programing\\JMAN\\Final Project\\FinalProject-DSP\\Model\\resources/eda_report.html'
+2024-04-13 22:56:13,859 - INFO - EDA report generated successfully. Time taken: 19.41 seconds

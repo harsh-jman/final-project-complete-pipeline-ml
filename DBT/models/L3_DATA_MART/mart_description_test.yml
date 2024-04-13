@@ -1,0 +1,305 @@
+version: 2
+
+models:
+  - name: mart_user_status
+    description: Table containing information about users, their roles, and skill proficiency based status.
+    
+    columns:
+      - name: USER_ID
+        description: Unique identifier for each user.
+        tests:
+          - not_null
+          - unique
+        
+      - name: FULL_NAME
+        description: Full name of the user.
+        tests:
+          - not_null
+        
+      - name: DESIGNATION
+        description: Job designation of the user.
+        tests:
+          - not_null
+          - accepted_values: {values: ["Software Engineer", "Sr. Software Engineer", "Solution Enabler", "Consultant", "Architect", "Principal Architect"]} # Assuming these are the only accepted designations
+        
+      - name: TOTAL_APPROVED_SKILLS
+        description: Total number of skills approved for the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+      - name: TOTAL_REJECTED_SKILLS
+        description: Total number of skills rejected for the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: TOTAL_PENDING_SKILLS
+        description: Total number of skills pending approval for the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+  - name: mart_skills_verified
+    description: Table containing information about users' verified skills and related metrics.
+    
+    columns:
+      - name: FULL_NAME
+        description: Full name of the user.
+        tests:
+          - not_null
+        
+      - name: DESIGNATION
+        description: Job designation of the user.
+        tests:
+          - not_null
+          - accepted_values: {values: ["Software Engineer", "Sr. Software Engineer", "Solution Enabler", "Consultant", "Architect", "Principal Architect"]} # Assuming these are the only accepted designations
+        
+      - name: VERIFIED_SKILL_COUNT
+        description: Total number of verified skills for the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: ADVANCED_SKILL_COUNT
+        description: Total number of advanced level skills for the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: INTERMEDIATE_SKILL_COUNT
+        description: Total number of intermediate level skills for the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: BEGINNER_SKILL_COUNT
+        description: Total number of beginner level skills for the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: AVERAGE_HACKER_RANK_SCORE_VERIFIED
+        description: Average HackerRank score for verified skills of the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              
+      - name: AVERAGE_DECISION_TIME_VERIFIED
+        description: Average decision time for verifying skills of the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              
+      - name: AVERAGE_RATING_APPROVED
+        description: Average rating for approved skills of the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+  - name: mart_certificate_on_designation
+    description: Table containing information about certificates based on job designations.
+    
+    columns:
+      - name: DESIGNATION
+        description: Job designation.
+        tests:
+          - not_null
+          - accepted_values: {values: ["Software Engineer", "Sr. Software Engineer", "Solution Enabler", "Consultant", "Architect", "Principal Architect"]} # Enum from previous
+        
+      - name: TOTAL_CERTIFICATES
+        description: Total number of certificates for the designation.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: VERIFIED_CERTIFICATES
+        description: Number of verified certificates for the designation.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: PENDING_CERTIFICATES
+        description: Number of pending certificates for the designation.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: REJECTED_CERTIFICATES
+        description: Number of rejected certificates for the designation.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: VERIFIED_PERCENTAGE
+        description: Percentage of verified certificates out of total certificates.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+        
+      - name: PENDING_PERCENTAGE
+        description: Percentage of pending certificates out of total certificates.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+        
+      - name: REJECTED_PERCENTAGE
+        description: Percentage of rejected certificates out of total certificates.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+        
+      - name: AVERAGE_VALIDITY_MONTHS
+        description: Average validity of certificates in months.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+  - name: mart_emp_count_designation
+    description: Table containing information about employee counts based on job designations.
+    
+    columns:
+      - name: DESIGNATION
+        description: Job designation.
+        tests:
+          - not_null
+          - accepted_values: {values: ["Sr. Software Engineer", "Solution Enabler","Architect", "Software Engineer", "Principal Architect", "Consultant"]}
+        
+      - name: USER_COUNT
+        description: Total number of users with the designation.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: ADMIN_COUNT
+        description: Number of administrative users with the designation.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+  - name: mart_project_exp_on_designation
+    description: Table containing information about project experiences based on job designations.
+    
+    columns:
+      - name: DESIGNATION
+        description: Job designation.
+        tests:
+          - not_null
+          - accepted_values: {values: ["Sr. Software Engineer", "Solution Enabler","Architect", "Software Engineer", "Principal Architect", "Consultant"]}
+        
+      - name: TOTAL_PROJECT_EXPERIENCES
+        description: Total number of project experiences for the designation.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: PENDING_PROJECT_EXPERIENCES
+        description: Number of pending project experiences for the designation.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: REJECTED_PROJECT_EXPERIENCES
+        description: Number of rejected project experiences for the designation.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: VERIFIED_PROJECT_EXPERIENCES
+        description: Number of verified project experiences for the designation.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: PENDING_PERCENTAGE
+        description: Percentage of pending project experiences out of total project experiences.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+        
+      - name: REJECTED_PERCENTAGE
+        description: Percentage of rejected project experiences out of total project experiences.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+        
+      - name: VERIFIED_PERCENTAGE
+        description: Percentage of verified project experiences out of total project experiences.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+        
+      - name: AVERAGE_DAYS_IN_PROJECT
+        description: Average number of days spent in projects for the designation.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+  - name: mart_skills_not_verified
+    description: Table containing information about users with unverified skills.
+    
+    columns:
+      - name: USER_ID
+        description: Unique identifier for each user.
+        tests:
+          - not_null
+          - unique
+        
+      - name: FULL_NAME
+        description: Full name of the user.
+        tests:
+          - not_null
+        
+      - name: DESIGNATION
+        description: Job designation of the user.
+        tests:
+          - not_null
+          - accepted_values: {values: ["Principal Architect", "Architect", "Solution Enabler", "Consultant", "Software Engineer", "Sr. Software Engineer"]}
+        
+      - name: VERIFIED_SKILL_COUNT
+        description: Total number of verified skills for the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: ADVANCED_SKILL_COUNT
+        description: Total number of advanced level skills for the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: INTERMEDIATE_SKILL_COUNT
+        description: Total number of intermediate level skills for the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: BEGINNER_SKILL_COUNT
+        description: Total number of beginner level skills for the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+        
+      - name: AVERAGE_HACKER_RANK_SCORE_VERIFIED
+        description: Average HackerRank score for verified skills of the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              
+      - name: AVERAGE_DECISION_TIME_VERIFIED
+        description: Average decision time for verifying skills of the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              
+      - name: AVERAGE_RATING_APPROVED
+        description: Average rating for approved skills of the user.
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0

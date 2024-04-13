@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: SnowFlakeDB
+    database: FINALPROJECTPROD
+    schema: RAW
+    tables:
+      - name: APPROVERDETAILS
+      - name: CERTIFICATES
+      - name: PROJECTEXPERIENCES
+      - name: SKILLS
+      - name: USERS
+      - name: USERSKILLS
+

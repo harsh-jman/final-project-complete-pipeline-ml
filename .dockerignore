@@ -1,0 +1,5 @@
+.env
+dbt_packages*
+venv
+.ipynb_checkpoints*
+__pycache__
