@@ -77,9 +77,9 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose port 5000 to the outside world
-EXPOSE 5000
+EXPOSE $PORT
 
 # Run gunicorn when the container launches
 # Run gunicorn with specified options and timeout when the container launches
-CMD ["gunicorn", "--bind", "0.0.0.0:80", "--worker-class=gevent", "--worker-connections=1000", "--workers=3", "--timeout", "300", "server:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:$PORT", "--worker-class=gevent", "--worker-connections=1000", "--workers=3", "--timeout", "300", "server:app"]
 
