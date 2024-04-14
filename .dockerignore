@@ -1,4 +1,5 @@
 .env
+.git
 dbt_packages*
 venv
 .ipynb_checkpoints*

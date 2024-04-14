@@ -25,5 +25,3 @@ def commit_files_to_repo():
         print("Changes pushed successfully.")
     except GitCommandError as e:
         print("An error occurred:", e)
-
-commit_files_to_repo()

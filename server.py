@@ -152,6 +152,7 @@ def dbt_docs_generate():
         start_time = time.time()
         dbtDocsGenerate()
         log_message("INFO", "DBT docs generated successfully", "DBT Docs")
+        print("commiting started")
         commit_files_to_repo()
         end_time = time.time()
         running_time = round(end_time - start_time, 2)
