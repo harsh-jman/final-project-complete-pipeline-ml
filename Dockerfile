@@ -31,7 +31,7 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose port 5000 to the outside world
-EXPOSE 5000
+EXPOSE $PORT
 
 # Run gunicorn when the container launches
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "server:app"]
+CMD gunicorn --workers=2 --bind 0.0.0.0:$PORT server:app
