@@ -81,5 +81,6 @@ EXPOSE $PORT
 
 # Run gunicorn when the container launches
 # Run gunicorn with specified options and timeout when the container launches
-CMD ["gunicorn", "--bind", "0.0.0.0:$PORT", "--worker-class=gevent", "--worker-connections=1000", "--workers=3", "--timeout", "300", "server:app"]
+CMD gunicorn --bind 0.0.0.0:$PORT --worker-class=gevent --worker-connections=1000 --workers=3 --timeout 300 server:app
+
 
