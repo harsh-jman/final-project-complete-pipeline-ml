@@ -162,3 +162,30 @@
 2024-04-13 22:55:22,353 - INFO - EDA report generated successfully. Time taken: 20.03 seconds
 2024-04-13 22:55:45,183 - ERROR - Error occurred while generating EDA report file: [WinError 2] The system cannot find the file specified: 'D:\\Programing\\JMAN\\Final Project\\FinalProject-DSP\\Model\\resources/eda_report.html'
 2024-04-13 22:56:13,859 - INFO - EDA report generated successfully. Time taken: 19.41 seconds
+2024-04-15 23:44:27,705 - INFO - EDA report generated successfully. Time taken: 28.39 seconds
+2024-04-15 23:55:40,598 - ERROR - Error occurred during EDA report generation: [Errno 2] No such file or directory: 'data/processed/synthetic_data.csv'
+2024-04-15 23:56:11,608 - ERROR - Error occurred during EDA report generation: [Errno 2] No such file or directory: 'data/ar/synthetic_data.csv'
+2024-04-15 23:56:51,881 - INFO - EDA report generated successfully. Time taken: 12.98 seconds
+2024-04-16 00:22:41,514 - INFO - EDA report generated successfully. Time taken: 14.88 seconds
+2024-04-16 00:23:17,128 - ERROR - Error occurred during data cleaning and preprocessing: [Errno 2] No such file or directory: 'staging_raw_data/APPROVERDETAILS.csv'
+2024-04-16 00:23:43,013 - INFO - Data ingestion successful. Time taken: 12.88 seconds
+2024-04-16 00:23:48,956 - ERROR - Error occurred during data cleaning and preprocessing: Passing 'suffixes' which cause duplicate columns {'_id_x'} is not allowed.
+2024-04-16 00:25:45,045 - ERROR - Error occurred during data cleaning and preprocessing: Passing 'suffixes' which cause duplicate columns {'_id_x'} is not allowed.
+2024-04-16 00:26:53,428 - ERROR - Error occurred during data cleaning and preprocessing: Passing 'suffixes' which cause duplicate columns {'_id_x'} is not allowed.
+2024-04-16 00:28:42,825 - ERROR - Error occurred during data cleaning and preprocessing: Passing 'suffixes' which cause duplicate columns {'_id_x'} is not allowed.
+2024-04-16 01:02:09,299 - ERROR - Error occurred during data cleaning and preprocessing: 'userId_x'
+2024-04-16 01:05:59,963 - INFO - Data cleaning and preprocessing completed successfully
+2024-04-16 01:06:40,999 - INFO - EDA report generated successfully. Time taken: 15.41 seconds
+2024-04-16 01:16:40,772 - INFO - EDA report generated successfully. Time taken: 38.92 seconds
+2024-04-16 01:16:49,195 - INFO - EDA report generated successfully. Time taken: 21.7 seconds
+2024-04-16 01:19:10,621 - INFO - EDA report generated successfully. Time taken: 17.46 seconds
+2024-04-16 01:21:19,428 - INFO - EDA report generated successfully. Time taken: 29.89 seconds
+2024-04-16 01:36:49,045 - INFO - EDA report generated successfully. Time taken: 15.65 seconds
+2024-04-16 01:38:39,812 - INFO - EDA report generated successfully. Time taken: 17.75 seconds
+2024-04-16 01:41:25,114 - INFO - EDA report generated successfully. Time taken: 46.05 seconds
+2024-04-16 01:43:57,024 - INFO - EDA report generated successfully. Time taken: 17.89 seconds
+2024-04-16 01:45:26,793 - INFO - EDA report generated successfully. Time taken: 26.54 seconds
+2024-04-16 01:55:37,184 - INFO - EDA report generated successfully. Time taken: 44.29 seconds
+2024-04-16 01:58:35,935 - INFO - Data cleaning and preprocessing completed successfully
+2024-04-16 01:59:08,482 - INFO - EDA report generated successfully. Time taken: 25.56 seconds
+2024-04-16 02:02:23,247 - INFO - EDA report generated successfully. Time taken: 26.2 seconds

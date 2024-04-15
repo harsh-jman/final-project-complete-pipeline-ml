@@ -12,7 +12,8 @@ from utils.data_ingestion_pipeline import connect_mongodb, connect_snowflake, ge
 from utils.dbt_triggers import dbtDocsGenerate, dbtRun
 from utils.loger_mongo import log_message
 from utils.git_dbt_docs_push import commit_files_to_repo
-
+from utils.data_preprocessing import merge_and_export_data , preprocess_data
+import pandas as pd
 load_dotenv()
 
 logging.basicConfig(filename='api_logs.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -78,7 +79,6 @@ def ingest_data():
 
         get_data_from_mongodb(mongo_db, mongo_client)
         ingest_data_to_snowflake(snowflake_conn)
-        empty_csv_folder()
 
         end_time = time.time()
         running_time = round(end_time - start_time, 2)
@@ -97,6 +97,33 @@ def ingest_data():
             "message": f"Error occurred during data ingestion: {str(e)}"
         }
         return jsonify(response), 500
+    
+@app.route('/dataCleaning', methods=['GET'])
+def data_cleaning():
+    try:
+        input_directory = 'staging_raw_data/'
+        output_file_path = 'data/artifact/merged_Data.csv' 
+        print('merge started')
+        merge_and_export_data(input_directory,output_file_path)
+        print('merge done')
+        merged_df = pd.read_csv('data/artifact/merged_Data.csv')
+        eda_df = preprocess_data(merged_df)
+        eda_df.to_csv("data/processed/cleaned_ready.csv", index=None)
+
+        response = {
+            "status": "success",
+            "message": "Data cleaning and preprocessing completed successfully"
+        }
+        logging.info("Data cleaning and preprocessing completed successfully")
+        return jsonify(response), 200
+    except Exception as e:
+        logging.error("Error occurred during data cleaning and preprocessing: %s", str(e))
+        response = {
+            "status": "error",
+            "message": f"Error occurred during data cleaning and preprocessing: {str(e)}"
+        }
+        return jsonify(response), 500
+
 
 @app.route('/dbtRun', methods=['GET'])
 def dbt_run():
@@ -124,6 +151,7 @@ def dbt_run():
 @app.route('/getEDA', methods=['GET'])
 def eda_endpoint():
     try:
+        # input_file = "data/artifact/synthetic_data.csv"
         input_file = "data/processed/eda.csv"
         output_file = "resources/eda_report.html"
         start_time = time.time()

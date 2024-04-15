@@ -19,4 +19,4 @@ def training(data_path, text_column, save_path):
     # Call the build_faiss_index function
     build_embedding_index_from_df(df, text_column, save_path)
 
-    return "FAISS index training completed successfully and saved at: {}".format(save_path)
+    return "index training completed successfully and saved at: {}".format(save_path)
